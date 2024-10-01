@@ -8,14 +8,11 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary_fot_DB
 {
-    [Table(name: "Questions")]
-    public class Question
+    [Table(name: "Answer_masses")]
+    public class Answer_mas
     {
         [Key]
-        public int Id { get; set; }
-        [Required]
-        public string Title { get; set; }
-        public Category Category { get; set; }
-        public Type_ Type { get; set; }
+        public int ID { get; set; }
+        public Question Question { get; set; }
     }
 }

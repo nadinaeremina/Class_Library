@@ -10,10 +10,12 @@ namespace ClassLibrary_fot_DB
 {
     public class EnglishDbContext: DbContext
     {
-        public EnglishDbContext() : base("name=English2") { }
+        public EnglishDbContext() : base("name=English") { }
 
-        public DbSet<User> Users { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Answer> Answers { get; set; }
+        public DbSet<Answer_mas> Answer_mas { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Type_> Types { get; set; }
     }
 }
